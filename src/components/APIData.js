@@ -48,7 +48,7 @@ const APIData = () => {
   //   .then(res => res.json())
   // }
 
-  const postData = async () => {
+  const saveData = async () => {
     const post = await axios.post('https://dummyjson.com/products/add', data)
     console.log(data, "respones====================>");
 
@@ -84,7 +84,7 @@ const APIData = () => {
 
   return (
     <div>
-      APIData<button onClick={() => postData()}>Save</button>
+      APIData<button onClick={() => saveData()}>Save</button>
       <button onClick={() => putData()}>Edit</button>
       <button onClick={() => deleteData()}>Delete</button>
 
